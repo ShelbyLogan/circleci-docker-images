@@ -1,0 +1,7 @@
+#!
+
+image="autotelic/circleci-base:$(cat ./VERSION)"
+
+docker build . -t $image
+
+docker push $image
